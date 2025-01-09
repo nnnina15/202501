@@ -1,0 +1,46 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(238, 182, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+
+.relative {
+    position: relative;
+    background-color: rgb(173, 189, 219);
+    top: 100px;
+    left: 100px;
+}
+
+.absolute {
+    position: absolute;
+    background-color: rgb(189, 219, 173);
+    top: 100px;
+    left: 100px;
+    opacity: 0.8;
+}
+
+.p3-css {
+    margin-top: 100px;
+    background-color: rgb(175, 83, 67);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p3-css p {
+    font-size: 50px;
+    color: white;
+}
+
+.fixed {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    background-color: rgb(173, 189, 219);
+    opacity: 0.8;
+}

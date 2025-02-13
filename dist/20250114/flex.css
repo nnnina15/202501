@@ -2,7 +2,7 @@
     /* 預設是 block 元素 */
     display: flex;
     /* 預設是 inline 元素 */
-    display: inline-flex;
+    /* display: inline-flex; */
 }
 
 /* 預設，左到右 */
@@ -30,6 +30,16 @@
     gap: 20px;
 }
 
+/* 不換行，預設 */
+.flex__wrap--nowrap {
+    flex-wrap: nowrap;
+}
+
+/* 換行 */
+.flex__wrap--wrap {
+    flex-wrap: wrap;
+}
+
 /* 水平置左 */
 .flex__justify--start {
     /* text-align: left; */
@@ -51,4 +61,24 @@
 /* 水平貼齊起點與終點後，平均分布*/
 .flex__justify--space-between {
     justify-content: space-between;
+}
+
+/* 垂直置頂 */
+.flex__align--top {
+    align-items: flex-start;
+}
+
+/* 垂直置中 */
+.flex__align--center {
+    align-items: center;
+}
+
+/* 垂直置底 */
+.flex__align--bottom {
+    align-items: flex-end;
+}
+
+.item {
+    padding: 20px;
+    border: 1px solid #000;
 }

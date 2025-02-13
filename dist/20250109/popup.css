@@ -1,3 +1,4 @@
+/* 全域變數設定 */
 :root {
     --popup-width: 300px;
     --popup-height: 300px;
@@ -25,5 +26,4 @@
     left: calc(50% - (var(--popup-width) / 2));
     background: #fff;
     color: #000;
-    text-align: center;
 }

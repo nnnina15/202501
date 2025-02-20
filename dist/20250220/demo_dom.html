@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM 操作示範</title>
+        <link rel="stylesheet" href="css/demo_dom.css" />
+    </head>
+    <body>
+        <div id="app">
+            <div class="container">
+                <h1>Nina Test</h1>
+                <h2>HELLO WORLD</h2>
+                <div class="btn-group">
+                    <button id="set-highlight">Add</button>
+                    <button id="remove-highlight">Delete</button>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="Account" placeholder="Account" />
+                    <input
+                        type="password"
+                        id="Password"
+                        placeholder="Password"
+                    />
+                </div>
+            </div>
+            <br />
+            <div class="container">
+                <h1>AI DOM 操作示範</h1>
+
+                <div class="demo-box">
+                    <h2>示範區域 1</h2>
+                    <button id="changeTextBtn">改變文字</button>
+                    <p id="demoText">這是一段可以被改變的文字</p>
+                </div>
+
+                <div class="demo-box">
+                    <h2>示範區域 2</h2>
+                    <button id="addItemBtn">新增項目</button>
+                    <ul id="itemList">
+                        <li>項目 1</li>
+                        <li>項目 2</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/demo_dom.js"></script>
+    </body>
+</html>

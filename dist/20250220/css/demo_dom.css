@@ -1,0 +1,183 @@
+:root {
+    --dark-primary: #1a1a1a;
+    --dark-secondary: #2d2d2d;
+    --dark-accent: #404040;
+    --dark-text: #ffffff;
+    --dark-highlight: #d8c764;
+    --dark-success: #00b894;
+    --dark-danger: #ff4757;
+    --dark-border: #333333;
+}
+
+body {
+    background-color: var(--dark-primary);
+    color: var(--dark-text);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--dark-secondary);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--dark-border);
+}
+
+.demo-box {
+    border: 2px solid var(--dark-accent);
+    padding: 20px;
+    margin: 15px 0;
+    background-color: var(--dark-secondary);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.highlight {
+    background-color: var(--dark-highlight);
+    color: var(--dark-text);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    color: var(--dark-text);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--dark-accent);
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: var(--dark-highlight);
+}
+
+button {
+    background-color: var(--dark-highlight);
+    color: var(--dark-text);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(108, 92, 231, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background-color: #8067e7;
+    box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+}
+
+button[id="changeTextBtn"],
+button[id="addItemBtn"] {
+    background-color: var(--dark-success);
+    box-shadow: 0 2px 8px rgba(0, 184, 148, 0.2);
+}
+
+button[id="changeTextBtn"]:hover,
+button[id="addItemBtn"]:hover {
+    background-color: #00d1a7;
+    box-shadow: 0 4px 12px rgba(0, 184, 148, 0.3);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid var(--dark-accent);
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: var(--dark-accent);
+    color: var(--dark-text);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--dark-highlight);
+    box-shadow: 0 0 10px rgba(108, 92, 231, 0.2);
+}
+
+input::placeholder {
+    color: #888888;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: var(--dark-accent);
+    border-radius: 15px;
+    border-left: 5px solid var(--dark-highlight);
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: translateX(5px);
+    background-color: #4a4a4a;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    margin-bottom: 15px;
+}
+
+.btn-delete {
+    background-color: var(--dark-danger);
+    box-shadow: 0 2px 8px rgba(255, 71, 87, 0.2);
+}
+
+.btn-delete:hover {
+    background-color: #ff6b77;
+    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
+}
+
+/* 添加深色主題特效 */
+.container:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.demo-box:hover {
+    border-color: var(--dark-highlight);
+}
+
+/* 添加霓虹效果 */
+button {
+    position: relative;
+    overflow: hidden;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+button:hover::after {
+    left: 100%;
+}
